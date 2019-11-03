@@ -42,7 +42,7 @@ function addItem(event = false) {
         let text = document.querySelector('ion-input').value;
         let url = "https://maps.google.com/maps?&z=15&t=k&q="+pos.coords.latitude+" "+pos.coords.longitude;
 
-        if (event) {
+        if (event != false) {
             let reader = new FileReader();
             reader.onload = (data) => {
                 saveItem({ name:text, img:data.target.result, url:url });

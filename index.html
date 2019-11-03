@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -8,13 +9,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.11.2/css/ionic.bundle.css"/>
   <script src="cordova.js"></script>
   <script src="places.js"></script>
-  <title>Places!</title>
+  <title>Lugares!</title>
 </head>
+
 <body onload="onLoad()">
   <ion-app>
     <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Places!</ion-title>
+      <ion-toolbar color="dark">
+        <ion-title>Lugares!</ion-title>
         <ion-buttons slot="primary">
           <ion-button onclick="toggleReorder()">
             <ion-icon slot="icon-only" name="reorder"></ion-icon>
@@ -22,6 +24,7 @@
         </ion-buttons>
       </ion-toolbar>       
     </ion-header>
+
     <ion-content>
       <ion-list lines="full">
         <ion-item color="light">
